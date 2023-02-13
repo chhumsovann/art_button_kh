@@ -60,6 +60,7 @@ class _LoginViewState extends State<LoginView> {
               ArtButtonsKh(
                 onPressed: _submitForm,
                 text: 'Login',
+                backgroundColor: Theme.of(context).primaryColor,
               ),
             ],
           ),
