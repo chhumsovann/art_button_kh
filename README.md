@@ -41,6 +41,8 @@ For example, to create a button with white text, you could use the following cod
 
 
 
+
+
 ```dart
 ArtButtonsKh(
   onPressed: _submitForm,
@@ -49,7 +51,7 @@ ArtButtonsKh(
 ),
 ```
 
-
+<img src="https://github.com/Kimsoer/art_button_kh/blob/main/docs/readme_assets/login.png" alt="auth button group secondary buttons" width="200"/> 
 
 ## LICENSE
 
