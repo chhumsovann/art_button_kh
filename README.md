@@ -3,6 +3,7 @@
 
 Art buttons kh package lets you add a beautiful.
 This is a customizable button library for Flutter that provides a set of pre-designed buttons that you can use in your app. The library includes a variety of button styles, such as flat buttons, raised buttons, and icon buttons, as well as support for customizing the button's color, shape, and text.
+Art buttons kh is opensource library developed by  <a href="https://kimsoer.site/">Voern Kimsoer</a>
 
 ## Features
 
@@ -81,7 +82,7 @@ For example, to create a button with white text, you could use the following cod
 ),
 ```
 
-<img src="https://github.com/Kimsoer/art_button_kh/raw/main/docs/readme_assets/login.png"  width="200"/> 
+<img src="https://github.com/Kimsoer/art_button_kh/raw/main/doc/readme_assets/login.png"  width="200"/> 
 
 ## LICENSE
 
