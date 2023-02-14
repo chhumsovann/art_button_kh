@@ -28,16 +28,17 @@ import 'package:art_buttons_kh/art_buttons_kh.dart';
 ##Customization
 The Art Buttons Kh widget supports a number of properties that you can use to customize the button's appearance, including:
 
-- text: The text to display on the button.
-- onPressed: A callback that will be called when the button is pressed.
-- color: The background color of the button.
-- textColor: The color of the text on the button.
-- borderRadius: The radius of the button's corners.
-- margin: The amount of padding around the button's text.
-- disabled: A flag indicating whether the button should be disabled.
+- `text`: The text to display on the button.
+- `onPressed`: A callback that will be called when the button is pressed.
+- `color`: The background color of the button.
+- `backgroundColor`: The color of background on the button.
+- `borderRadius`: The radius of the button's corners.
+- `margin`: The amount of padding around the button's text.
 
 
 ## Example
+For example, to create a button with white text, you could use the following code:
+
 
 
 ```dart
