@@ -51,7 +51,7 @@ ArtButtonsKh(
 ),
 ```
 
-<img src="https://github.com/Kimsoer/art_button_kh/blob/main/docs/readme_assets/login.png" alt="auth button group secondary buttons" width="200"/> 
+<img src="https://github.com/Kimsoer/art_button_kh/raw/main/docs/readme_assets/login.png"  width="200"/> 
 
 ## LICENSE
 

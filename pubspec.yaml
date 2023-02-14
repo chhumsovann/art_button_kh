@@ -1,7 +1,8 @@
 name: art_buttons_kh
-description: sample button style
-version: 0.0.1
+description: This package provides a set of pre-designed buttons that you can use in your app. The library includes a variety of button styles, such as flat buttons, raised buttons, and icon buttons, as well as support for customizing the button's color, shape, and text.
+version: 0.0.4
 homepage: https://github.com/Kimsoer/art_button_kh
+repository: https://github.com/Kimsoer/art_button_kh.git
 
 
 environment:
@@ -15,7 +16,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
