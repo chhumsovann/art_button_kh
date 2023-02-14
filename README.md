@@ -1,7 +1,15 @@
 
-# Art Buttons kh Style
+# Art Buttons kh customize libary
 
-Art buttons kh package lets you add a beautiful gradient button to your Flutter app.
+Art buttons kh package lets you add a beautiful.
+This is a customizable button library for Flutter that provides a set of pre-designed buttons that you can use in your app. The library includes a variety of button styles, such as flat buttons, raised buttons, and icon buttons, as well as support for customizing the button's color, shape, and text.
+
+## Features
+
+- A variety of button styles to choose from, including flat, raised, and icon buttons.
+- Support for customizing the button's color, shape, and text.
+- Easy to use API that makes it simple to add buttons to your app.
+- Fully compatible with Flutter's Material Design guidelines.
 
 ## Installation
 
@@ -15,39 +23,35 @@ dependencies:
 import 'package:art_buttons_kh/art_buttons_kh.dart';
 ```
 
+
+
+##Customization
+The Art Buttons Kh widget supports a number of properties that you can use to customize the button's appearance, including:
+
+- text: The text to display on the button.
+- onPressed: A callback that will be called when the button is pressed.
+- color: The background color of the button.
+- textColor: The color of the text on the button.
+- borderRadius: The radius of the button's corners.
+- margin: The amount of padding around the button's text.
+- disabled: A flag indicating whether the button should be disabled.
+
+
 ## Example
-There are a number of properties that you can modify:
 
-final Function? onPressed;
-final String? text;
-final Color? textColor;
-final double? height;
-final double? width;
-final Color? backgroundColor;
-final Color? disableBackgroundColor;
-final EdgeInsetsGeometry? margin;
-final double? radius;
-final double? elevation;
-final double? fontSize = 18;
-<hr>
-
-<table>
-<tr>
-<td>
 
 ```dart
 ArtButtonsKh(
-onPressed: _submitForm,
-text: 'Login',
-backgroundColor: Theme.of(context).primaryColor,
+  onPressed: _submitForm,
+  text: 'Login',
+  backgroundColor: Theme.of(context).primaryColor,
 ),
 ```
 
-</td>
-<td>
-</td>
-</tr>
-</table>
 
-## Next Goals
+
+## LICENSE
+
+This `README.md` file provides an overview of your button library, explains how to install and use it, and provides examples of how to customize the button's appearance. You should customize the file to match the specific features and functionality of your button library.
+
 

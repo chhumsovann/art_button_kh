@@ -91,6 +91,26 @@ class _LoginViewState extends State<LoginView> {
                 text: 'Login',
                 backgroundColor: Theme.of(context).primaryColor,
               ),
+
+              ArtButtonsKh(
+                margin: const EdgeInsets.only(top: 10),
+                onPressed: _submitForm,
+                text: 'Save',
+                backgroundColor: Colors.amber,
+              ),
+              ArtButtonsKh(
+                margin: const EdgeInsets.only(top: 10),
+                onPressed: _submitForm,
+                text: 'Closed',
+                backgroundColor: Colors.redAccent,
+              ),
+              ArtButtonsKh(
+                margin: const EdgeInsets.only(top: 10),
+                onPressed: _submitForm,
+                text: 'Disabled',
+                backgroundColor: Colors.brown,
+
+              ),
             ],
           ),
         ),
