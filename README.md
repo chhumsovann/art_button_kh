@@ -8,15 +8,15 @@ This is a customizable button library for Flutter that provides a set of pre-des
 
 - A variety of button styles to choose from, including flat, raised, and icon buttons.
 - Support for customizing the button's color, shape, and text.
-- Easy to use API that makes it simple to add buttons to your app.
 - Fully compatible with Flutter's Material Design guidelines.
+- It can be use style as outline button, normal button and circle button 
 
 ## Installation
 
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  art_buttons_kh: ^0.0.1
+  art_buttons_kh: ^0.0.4
 ```
 2. Import the package and use it in your Flutter App.
 ```dart
@@ -44,10 +44,40 @@ For example, to create a button with white text, you could use the following cod
 
 
 ```dart
-ArtButtonsKh(
-  onPressed: _submitForm,
-  text: 'Login',
-  backgroundColor: Theme.of(context).primaryColor,
+ Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: [
+        Expanded(
+            child: ArtButtonsKh(
+                  onPressed: () {}, 
+                  text: "Button", 
+                  backgroundColor: color
+            )
+          ),
+        SizedBox(width: 10),
+        Expanded(
+            child: ArtButtonsKh(
+                onPressed: () {},
+                text: "Button",
+                backgroundColor: color,
+                radius: 20,
+            ),
+        ),
+        SizedBox(
+        width: 10,
+        ),
+        Expanded(
+            child: ArtButtonsKh(
+                onPressed: () {},
+                text: "Button",
+                backgroundColor: color,
+                customizeBorderRadius: const BorderRadius.only(
+                topRight: Radius.circular(10),
+                bottomRight: Radius.circular(10),
+                ),
+            ),
+        ),
+    ],
 ),
 ```
 
