@@ -165,173 +165,180 @@ class _ButtonListStyleViewState extends State<ButtonListStyleView> {
   Widget build(BuildContext context) {
     var color = Color(0xffF23358);
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("All ArtButtonsKh List"),
-        ),
-        body: ListView(
-          padding: EdgeInsets.all(10),
-          children: [
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Expanded(child: ArtButtonsKh(onPressed: () {}, text: "Button", backgroundColor: color)),
-                SizedBox(
-                  width: 10,
+      appBar: AppBar(
+        title: const Text("All ArtButtonsKh List"),
+      ),
+      body: ListView(
+        padding: EdgeInsets.all(10),
+        children: [
+          SizedBox(
+            height: 10,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(child: ArtButtonsKh(onPressed: () {}, text: "Button", backgroundColor: color)),
+              SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: ArtButtonsKh(
+                  onPressed: () {},
+                  text: "Button",
+                  backgroundColor: color,
+                  radius: 20,
                 ),
-                Expanded(
-                  child: ArtButtonsKh(
-                    onPressed: () {},
-                    text: "Button",
-                    backgroundColor: color,
-                    radius: 20,
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: ArtButtonsKh(
+                  onPressed: () {},
+                  text: "Button",
+                  backgroundColor: color,
+                  customizeBorderRadius: const BorderRadius.only(
+                    topRight: Radius.circular(10),
+                    bottomRight: Radius.circular(10),
                   ),
                 ),
-                SizedBox(
-                  width: 10,
-                ),
-                Expanded(
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
                   child: ArtButtonsKh(
-                    onPressed: () {},
-                    text: "Button",
-                    backgroundColor: color,
-                    customizeBorderRadius: const BorderRadius.only(
-                      topRight: Radius.circular(10),
-                      bottomRight: Radius.circular(10),
-                    ),
-                  ),
+                onPressed: () {},
+                text: "Button",
+                backgroundColor: color,
+                prefixesIcons: Icon(Icons.add),
+              )),
+              const SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: ArtButtonsKh(
+                  onPressed: () {},
+                  text: "Button",
+                  backgroundColor: color,
+                  radius: 20,
+                  prefixesIcons: Icon(Icons.add),
                 ),
-              ],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Expanded(
-                    child: ArtButtonsKh(
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: ArtButtonsKh(
                   onPressed: () {},
                   text: "Button",
                   backgroundColor: color,
                   prefixesIcons: Icon(Icons.add),
-                )),
-                const SizedBox(
-                  width: 10,
                 ),
-                Expanded(
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
                   child: ArtButtonsKh(
-                    onPressed: () {},
-                    text: "Button",
-                    backgroundColor: color,
-                    radius: 20,
-                    prefixesIcons: Icon(Icons.add),
-                  ),
+                onPressed: () {},
+                text: "Button",
+                backgroundColor: color,
+                suffixesIcons: Icon(Icons.add),
+              )),
+              const SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: ArtButtonsKh(
+                  onPressed: () {},
+                  text: "Button",
+                  backgroundColor: color,
+                  radius: 20,
+                  suffixesIcons: Icon(Icons.add),
                 ),
-                SizedBox(
-                  width: 10,
-                ),
-                Expanded(
-                  child: ArtButtonsKh(
-                    onPressed: () {},
-                    text: "Button",
-                    backgroundColor: color,
-                    prefixesIcons: Icon(Icons.add),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Expanded(
-                    child: ArtButtonsKh(
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: ArtButtonsKh(
                   onPressed: () {},
                   text: "Button",
                   backgroundColor: color,
                   suffixesIcons: Icon(Icons.add),
-                )),
-                const SizedBox(
-                  width: 10,
                 ),
-                Expanded(
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
                   child: ArtButtonsKh(
-                    onPressed: () {},
-                    text: "Button",
-                    backgroundColor: color,
-                    radius: 20,
-                    suffixesIcons: Icon(Icons.add),
-                  ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Expanded(
-                  child: ArtButtonsKh(
-                    onPressed: () {},
-                    text: "Button",
-                    backgroundColor: color,
-                    suffixesIcons: Icon(Icons.add),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Expanded(
-                    child: ArtButtonsKh(
+                onPressed: () {},
+                text: "Button",
+                backgroundColor: color,
+                suffixesIcons: Icon(Icons.add),
+                prefixesIcons: Icon(Icons.add),
+                fontSize: 10,
+              )),
+              const SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: ArtButtonsKh(
                   onPressed: () {},
                   text: "Button",
                   backgroundColor: color,
-                  suffixesIcons: Icon(Icons.add),
-                  prefixesIcons: Icon(Icons.add),
+                  radius: 20,
                   fontSize: 10,
-                )),
-                const SizedBox(
-                  width: 10,
+                  suffixesIcons: Icon(Icons.add),
+                  prefixesIcons: Icon(Icons.add),
                 ),
-                Expanded(
-                  child: ArtButtonsKh(
-                    onPressed: () {},
-                    text: "Button",
-                    backgroundColor: color,
-                    radius: 20,
-                    fontSize: 10,
-                    suffixesIcons: Icon(Icons.add),
-                    prefixesIcons: Icon(Icons.add),
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: ArtButtonsKh(
+                  onPressed: () {},
+                  text: "Button",
+                  backgroundColor: color,
+                  fontSize: 10,
+                  suffixesIcons: Icon(
+                    Icons.add,
+                    size: 20,
+                  ),
+                  prefixesIcons: Icon(
+                    Icons.add,
+                    size: 25,
                   ),
                 ),
-                SizedBox(
-                  width: 10,
-                ),
-                Expanded(
-                  child: ArtButtonsKh(
-                    onPressed: () {},
-                    text: "Button",
-                    backgroundColor: color,
-                    fontSize: 10,
-                    suffixesIcons: Icon(
-                      Icons.add,
-                      size: 20,
-                    ),
-                    prefixesIcons: Icon(
-                      Icons.add,
-                      size: 25,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ));
+              ),
+            ],
+          ),
+          const SizedBox(height: 20),
+          ArtButtonsKh(
+            isOutlineButton: true,
+            backgroundColor: Colors.red,
+            onPressed: () {},
+          ),
+        ],
+      ),
+    );
   }
 }
