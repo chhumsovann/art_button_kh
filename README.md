@@ -17,7 +17,7 @@ Art buttons kh is opensource library developed by  <a href="https://kimsoer.site
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  art_buttons_kh: ^0.0.4
+  art_buttons_kh: ^0.0.7
 ```
 2. Import the package and use it in your Flutter App.
 ```dart

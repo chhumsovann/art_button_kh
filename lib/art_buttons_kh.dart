@@ -66,6 +66,9 @@ class ArtButtonsKh extends StatelessWidget {
   /// set font family
   final String? fontFamily;
 
+  /// set color border outlined button
+  final Color? borderColor;
+
   const ArtButtonsKh(
       {Key? key,
       required this.onPressed,
@@ -88,6 +91,7 @@ class ArtButtonsKh extends StatelessWidget {
       this.circleIcon,
       this.lineSize,
       this.fontFamily,
+      this.borderColor,
       this.fontSize = 12})
       : super(key: key);
 
@@ -154,9 +158,9 @@ class ArtButtonsKh extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.resolveWith<Color>(
                         (Set<MaterialState> states) {
                           if (states.contains(MaterialState.pressed)) {
-                            return backgroundColor!;
+                            return Colors.transparent;
                           }
-                          return backgroundColor!;
+                          return Colors.transparent;
                         },
                       ),
                       shape: MaterialStateProperty.all(
@@ -165,6 +169,9 @@ class ArtButtonsKh extends StatelessWidget {
                         ),
                       ),
                       elevation: MaterialStateProperty.all(elevation ?? 0),
+                      side: MaterialStateBorderSide.resolveWith((states) {
+                        return BorderSide(color: borderColor ?? Colors.black, width: lineSize ?? 1);
+                      }),
                     ),
                     child: Row(
                       mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.spaceBetween,

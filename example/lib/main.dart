@@ -332,11 +332,6 @@ class _ButtonListStyleViewState extends State<ButtonListStyleView> {
             ],
           ),
           const SizedBox(height: 20),
-          ArtButtonsKh(
-            isOutlineButton: true,
-            backgroundColor: Colors.red,
-            onPressed: () {},
-          ),
         ],
       ),
     );
